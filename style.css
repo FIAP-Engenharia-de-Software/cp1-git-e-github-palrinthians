@@ -59,3 +59,82 @@ footer #socialmedia{
     display: flex;
     flex-direction: column;
 }
+
+#contato {
+    display: flex;
+    justify-content: center;
+}
+
+.container-contato {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 15px;
+    width: 60%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contato input,
+#contato textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+#contato input:focus,
+#contato textarea:focus {
+    border-color: red;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.3);
+}
+
+#contato button {
+    background: linear-gradient(135deg, red, darkred);
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+#contato button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.info-contato {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.item-contato {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.item-contato:hover {
+    transform: translateX(5px);
+}
+
+.item-contato i {
+    color: red;
+    font-size: 18px;
+}
