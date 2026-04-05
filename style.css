@@ -1,3 +1,12 @@
+
+*{
+    box-sizing: border-box;
+}
+:root{
+    --light-blue: #5a99f7;
+    --white: #fff;
+    --gray: #333;
+}
 body {
     font-family: 'Open Sans',Arial, sans-serif;
     margin: 0;
@@ -5,8 +14,8 @@ body {
     background-color: #fff;
 }
 header {
-    background-color: #5a99f7;
-    color: #fff;
+    background-color: var(--light-blue);
+    color: var(--white);
     padding: 10px;
     text-align: center;
     display: flex;
@@ -25,7 +34,7 @@ nav ul li {
     margin-right: 20px;
 }
 nav ul li a {
-    color: #fff;
+    color: var(--white);
     text-decoration: none;
 }
 main {
@@ -43,8 +52,8 @@ section p {
     line-height: 1.6;
 }
 footer {
-    background-color: #5a99f7;
-    color: #fff;
+    background-color: var(--light-blue);
+    color: var(--white);
     text-align: center;
     padding: 30px;
     display: flex;
@@ -55,46 +64,61 @@ footer #socialmedia{
     display: flex;
     flex-direction: column;
 }
-
+.our_history{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+.cards{
+    padding-top: 30px;
+    display: flex;
+    gap: 20PX;
+}
+.cards img{
+    flex: 1;
+    width:20%;
+    border-radius: 30px;
+}
 #contato {
     display: flex;
     justify-content: center;
 }
-
 .container-contato {
-    background-color: #f9f9f9;
-    padding: 30px;
-    border-radius: 15px;
+    background-color: var(--white);
+    margin: auto;
+    border-radius: 12px;
     width: 60%;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
-
 #contato form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-
 #contato input,
 #contato textarea {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #ddd;
     border-radius: 8px;
     font-size: 14px;
     transition: 0.3s;
+    border: 1px solid var(--gray);
 }
-
+#contato input{
+    height: 40px;
+}
 #contato input:focus,
 #contato textarea:focus {
-    border-color: red;
+    border-color: var(--light-blue);
     outline: none;
-    box-shadow: 0 0 8px rgba(255, 0, 0, 0.3);
+    box-shadow: 0 0 8px var(--light-blue);
 }
-
 #contato button {
-    background: linear-gradient(135deg, red, darkred);
-    color: white;
+    margin: auto;
+    width: 100%;
+    background: linear-gradient(135deg, var(--light-blue), var(--light-blue));
+    color: var(--white);
     border: none;
     padding: 12px;
     cursor: pointer;
@@ -102,24 +126,21 @@ footer #socialmedia{
     font-size: 16px;
     transition: 0.3s;
 }
-
 #contato button:hover {
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
-
 .info-contato {
     margin-top: 25px;
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
-
 .item-contato {
     display: flex;
     align-items: center;
     gap: 10px;
-    background-color: #fff;
+    background-color: var(--white);
     padding: 12px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
@@ -131,6 +152,16 @@ footer #socialmedia{
 }
 
 .item-contato i {
-    color: red;
+    color: var(--light-blue);
     font-size: 18px;
+}
+.team-div{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+.section-team img{
+    min-width: 1000px;
 }
